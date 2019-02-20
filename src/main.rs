@@ -9,6 +9,7 @@ fn main() {
         };
 
         let response = tiny_http::Response::empty(200);
+        println!("request!");
         let _ = request.respond(response);
     }
 }
