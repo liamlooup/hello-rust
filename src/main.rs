@@ -1,3 +1,5 @@
+use std::time::SystemTime;
+
 fn main() {
     println!("Hello, world!");
     let server = tiny_http::Server::http("0.0.0.0:5099").unwrap();
@@ -9,7 +11,7 @@ fn main() {
         };
 
         let response = tiny_http::Response::empty(200);
-        println!("request!");
+        println!("request! {:?}", SystemTime::now());
         let _ = request.respond(response);
     }
 }
