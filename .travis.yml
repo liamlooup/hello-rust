@@ -4,3 +4,4 @@ rust:
   - beta
   - nightly
 before_script: cargo run &
+script: ./test.sh
