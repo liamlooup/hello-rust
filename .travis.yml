@@ -3,3 +3,4 @@ rust:
   - stable
   - beta
   - nightly
+before_script: cargo run &
